@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background: lavender;
+    
+	font-family: sans-serif;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:1rem 2rem;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 100;
+  }
+  
+  .header .logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    background: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+  }
+   .header .logo:hover{
+    color: #ccc;
+   }
+  .header .logo i{
+    padding:0 .5rem;
+
+  }
+  
+  
+  .header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+  }
+  
+  .header .navbar ul li{
+    margin:0 1.5rem;
+  }
+  
+  .header .navbar ul li a{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #a6366b;
+    text-decoration: none;
+    text-transform: capitalize;
+
+  }
+  
+  .header .navbar ul li a:hover{
+    color:#a6366aa3;
+  }
+  
+.login-box {
+	width: 360px;
+    height: 320px;
+	position: absolute;
+	top: 50%;
+	left: 50%;    
+    padding: 1rem;
+	transform: translate(-50%, -50%);
+    color: transparent;
+    background: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+
+}
+
+.login-box h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.user-box {
+	position: relative;
+}
+
+.user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #444;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #444;
+	outline: none;
+	background: transparent;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	color: #444;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #444;
+	font-size: 12px;
+}
+
+input[type="button"] {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: rgba(0, 26, 51, 0.584);
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+input[type="button"]:hover {
+	background: #14599ea3;
+}
+
+.error-message {
+	color: red;
+	margin-bottom: 20px;
+}
